@@ -45,6 +45,7 @@ app.use(cors({
     credentials: true,
 }));
 
+
 app.use("/api/staff", staffRoutes);
 app.use("/api/customers", customerRoutes);
 app.use("/api/auth/staff", staffAuthRoutes);
@@ -53,6 +54,10 @@ app.use("/api/orders", orderRoutes);
 app.use("/api/products", productRoutes);
 app.use("/api/stats", statsRoutes);
 app.use("/api/users", userRoutes);
+
+app.get("/api/health", (req, res) => {
+    res.json({ status: "Backend is working fine 🚀" });
+});
 
 app.get("/", (req, res) => {
     res.send("API is running...");
