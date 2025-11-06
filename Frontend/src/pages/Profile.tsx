@@ -1,15 +1,13 @@
 // src/pages/Profile.tsx
-import React, { use, useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
 import { User, Package, ArrowLeft, ChevronDown, Truck, CreditCard } from "lucide-react";
 import CustomerLayout from "../layout/CustomerLayout";
-import { useAuth } from "../hooks/useAuth";
 import { useNavigate } from "react-router-dom";
 import api from "../api/axiosInstance";
 import type { ICustomer, IOrder } from "../types";
 
 const Profile: React.FC = () => {
-    const { user } = useAuth();
     const navigate = useNavigate();
     const [activeTab, setActiveTab] = useState<"details" | "orders">("details");
     const [loggedUser, setLoggedUser] = useState<ICustomer | null>(null);

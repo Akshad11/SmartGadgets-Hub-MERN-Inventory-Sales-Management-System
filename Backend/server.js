@@ -40,12 +40,10 @@ ensureAdminExists();
 
 app.use(express.json());
 
-app.use(
-    cors({
-        origin: "http://localhost:5173", // Adjust as needed
-        credentials: true,
-    })
-);
+app.use(cors({
+    origin: ["https://smartgadgetshub.vercel.app", "http://localhost:5173"], // Vercel + local dev
+    credentials: true,
+}));
 
 app.use("/api/staff", staffRoutes);
 app.use("/api/customers", customerRoutes);

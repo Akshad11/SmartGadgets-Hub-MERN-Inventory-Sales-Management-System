@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
 import AdminLayout from "../../layout/AdminLayout";
 import type { IProduct } from "../../types";
@@ -140,8 +140,8 @@ const AdminProducts = () => {
 
                                     <td
                                         className={`px-5 py-3 font-medium ${p.stock < 10
-                                                ? "text-red-500 bg-red-50/50 rounded-md"
-                                                : "text-gray-700"
+                                            ? "text-red-500 bg-red-50/50 rounded-md"
+                                            : "text-gray-700"
                                             }`}
                                     >
                                         {p.stock}

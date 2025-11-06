@@ -29,7 +29,6 @@ const StaffDashboard: React.FC = () => {
         pendingOrders: 0,
     });
 
-    const [stockData, setStockData] = useState<{ name: string; stock: number }[]>([]);
     const [salesData, setSalesData] = useState([
         { day: "Mon", orders: 10 },
         { day: "Tue", orders: 12 },
@@ -48,7 +47,6 @@ const StaffDashboard: React.FC = () => {
                 console.log("Fetched staff dashboard data:", res.data);
                 setSalesData(res.data.salesData);
                 setStats(res.data.stats);
-                setStockData(res.data.stockData);
             } catch (error) {
                 toast.error("Failed to fetch dashboard data.");
             }

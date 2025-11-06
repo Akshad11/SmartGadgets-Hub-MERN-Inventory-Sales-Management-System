@@ -10,7 +10,7 @@ import { motion, AnimatePresence } from "framer-motion";
 
 
 const StaffProducts: React.FC = () => {
-    const { token, user } = useAuth();
+    const { token } = useAuth();
     const [products, setProducts] = useState<IProduct[]>([]);
     const [loading, setLoading] = useState(true);
     const [error, setError] = useState("");
@@ -30,16 +30,9 @@ const StaffProducts: React.FC = () => {
         fetchProducts();
     }, [token]);
 
-    const handleAddProduct = () => {
-        navigate("/product/add");
-    }
 
     const handleAddStock = () => {
         navigate(`/add-stock`);
-    };
-
-    const handleEditProduct = (id: string) => {
-        navigate(`/product/edit/${id}`);
     };
     return (
         <StaffLayout>

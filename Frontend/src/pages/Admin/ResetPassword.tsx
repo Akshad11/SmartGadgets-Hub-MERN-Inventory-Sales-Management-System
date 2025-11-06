@@ -9,7 +9,7 @@ import { LockKeyhole, Loader2 } from "lucide-react";
 
 const ResetPassword: React.FC = () => {
     const { id } = useParams<{ id: string }>();
-    const { token, user } = useAuth();
+    const { user } = useAuth();
     const navigate = useNavigate();
 
     const [password, setPassword] = useState("");

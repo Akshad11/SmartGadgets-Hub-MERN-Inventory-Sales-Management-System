@@ -19,7 +19,7 @@ const Products: React.FC = () => {
     const [selectedBrand, setSelectedBrand] = useState<string>("");
     const [selectedCategory, setSelectedCategory] = useState<string>("");
     const [priceRange, setPriceRange] = useState<number>(300000);
-    const [sortBy, setSortBy] = useState<string>("newest");
+    const [sortBy] = useState<string>("newest");
     const [inStockOnly, setInStockOnly] = useState(false);
     const [sidebarOpen, setSidebarOpen] = useState(false);
     const [expanded, setExpanded] = useState<{ [key: string]: boolean }>({
