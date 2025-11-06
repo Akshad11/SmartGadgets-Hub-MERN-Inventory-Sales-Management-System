@@ -1,0 +1,281 @@
+[
+    {
+        "name": "iPhone 15 Pro",
+        "description": "6.1-inch display, A17 Pro chip, 256GB storage",
+        "brand": "Apple",
+        "category": "Smartphones",
+        "price": 134999,
+        "stock": 25,
+        "imageUrl": "https://images.unsplash.com/photo-1695655307456-34a2c54b18c8"
+    },
+    {
+        "name": "Samsung Galaxy S24 Ultra",
+        "description": "6.8-inch AMOLED, Snapdragon 8 Gen 3, 200MP camera",
+        "brand": "Samsung",
+        "category": "Smartphones",
+        "price": 124999,
+        "stock": 18,
+        "imageUrl": "https://images.unsplash.com/photo-1611329068890-b3d0d1f07c6e"
+    },
+    {
+        "name": "OnePlus 12R",
+        "description": "Snapdragon 8 Gen 2, 120Hz AMOLED, 16GB RAM",
+        "brand": "OnePlus",
+        "category": "Smartphones",
+        "price": 45999,
+        "stock": 40,
+        "imageUrl": "https://images.unsplash.com/photo-1606813902919-06cd80b0cdb0"
+    },
+    {
+        "name": "MacBook Air M3",
+        "description": "13-inch Retina display, 8GB RAM, 512GB SSD",
+        "brand": "Apple",
+        "category": "Laptops",
+        "price": 122999,
+        "stock": 15,
+        "imageUrl": "https://images.unsplash.com/photo-1587614382346-4ec70e388b28"
+    },
+    {
+        "name": "Dell XPS 13",
+        "description": "Intel Core i7, 16GB RAM, 1TB SSD, 13.4” FHD+",
+        "brand": "Dell",
+        "category": "Laptops",
+        "price": 109999,
+        "stock": 20,
+        "imageUrl": "https://images.unsplash.com/photo-1610484826967-09c5720778e1"
+    },
+    {
+        "name": "HP Spectre x360",
+        "description": "2-in-1 convertible, Core i7, 16GB RAM, 512GB SSD",
+        "brand": "HP",
+        "category": "Laptops",
+        "price": 98999,
+        "stock": 22,
+        "imageUrl": "https://images.unsplash.com/photo-1587831990711-23ca6441447b"
+    },
+    {
+        "name": "ASUS ROG Zephyrus G14",
+        "description": "Ryzen 9, RTX 4070, 32GB RAM, 1TB SSD",
+        "brand": "ASUS",
+        "category": "Gaming Laptops",
+        "price": 189999,
+        "stock": 10,
+        "imageUrl": "https://images.unsplash.com/photo-1624705002806-50b8f3bce758"
+    },
+    {
+        "name": "Lenovo Legion 5 Pro",
+        "description": "Ryzen 7, RTX 4060, 165Hz QHD display",
+        "brand": "Lenovo",
+        "category": "Gaming Laptops",
+        "price": 145999,
+        "stock": 12,
+        "imageUrl": "https://images.unsplash.com/photo-1593642634443-44adaa06623a"
+    },
+    {
+        "name": "Sony WH-1000XM5",
+        "description": "Noise-cancelling wireless over-ear headphones",
+        "brand": "Sony",
+        "category": "Audio",
+        "price": 29999,
+        "stock": 30,
+        "imageUrl": "https://images.unsplash.com/photo-1518442326887-4813a8d5218e"
+    },
+    {
+        "name": "Apple AirPods Pro 2",
+        "description": "Active Noise Cancellation, MagSafe case",
+        "brand": "Apple",
+        "category": "Audio",
+        "price": 26999,
+        "stock": 35,
+        "imageUrl": "https://images.unsplash.com/photo-1590658268037-6b1ab5e0df23"
+    },
+    {
+        "name": "JBL Flip 6 Bluetooth Speaker",
+        "description": "Portable waterproof speaker with 12h playtime",
+        "brand": "JBL",
+        "category": "Audio",
+        "price": 8999,
+        "stock": 50,
+        "imageUrl": "https://images.unsplash.com/photo-1612636053176-3143b1c7b5c5"
+    },
+    {
+        "name": "Amazon Echo Dot (5th Gen)",
+        "description": "Smart speaker with Alexa voice assistant",
+        "brand": "Amazon",
+        "category": "Smart Home",
+        "price": 4999,
+        "stock": 60,
+        "imageUrl": "https://images.unsplash.com/photo-1577733975192-bb16aab94b58"
+    },
+    {
+        "name": "Google Nest Hub 2nd Gen",
+        "description": "Smart display with Google Assistant",
+        "brand": "Google",
+        "category": "Smart Home",
+        "price": 8499,
+        "stock": 45,
+        "imageUrl": "https://images.unsplash.com/photo-1595278069441-3eb2c2466c3a"
+    },
+    {
+        "name": "Mi Smart LED TV 55” 4K",
+        "description": "Android TV, Dolby Vision, PatchWall UI",
+        "brand": "Xiaomi",
+        "category": "Televisions",
+        "price": 43999,
+        "stock": 25,
+        "imageUrl": "https://images.unsplash.com/photo-1587202372775-e229f172b9d8"
+    },
+    {
+        "name": "Samsung QLED 55” 4K Smart TV",
+        "description": "Quantum HDR, 120Hz refresh, Alexa built-in",
+        "brand": "Samsung",
+        "category": "Televisions",
+        "price": 81999,
+        "stock": 18,
+        "imageUrl": "https://images.unsplash.com/photo-1588702547919-26089e690ecc"
+    },
+    {
+        "name": "Apple Watch Series 9",
+        "description": "GPS + Cellular, Always-On Retina Display",
+        "brand": "Apple",
+        "category": "Wearables",
+        "price": 45999,
+        "stock": 28,
+        "imageUrl": "https://images.unsplash.com/photo-1579586336465-3a06d1a9e937"
+    },
+    {
+        "name": "Samsung Galaxy Watch 6",
+        "description": "Super AMOLED display, sleep & fitness tracking",
+        "brand": "Samsung",
+        "category": "Wearables",
+        "price": 29999,
+        "stock": 34,
+        "imageUrl": "https://images.unsplash.com/photo-1606227454872-9b9d5c1a511b"
+    },
+    {
+        "name": "Fitbit Charge 6",
+        "description": "Heart rate, GPS, and Google Fit integration",
+        "brand": "Fitbit",
+        "category": "Wearables",
+        "price": 14999,
+        "stock": 42,
+        "imageUrl": "https://images.unsplash.com/photo-1583416750619-30e9f4f2d3f1"
+    },
+    {
+        "name": "GoPro Hero 12 Black",
+        "description": "5.3K60 video, waterproof action camera",
+        "brand": "GoPro",
+        "category": "Cameras",
+        "price": 49999,
+        "stock": 20,
+        "imageUrl": "https://images.unsplash.com/photo-1555617981-2c47f4b6a9dd"
+    },
+    {
+        "name": "Canon EOS R10",
+        "description": "24MP APS-C mirrorless camera with 4K video",
+        "brand": "Canon",
+        "category": "Cameras",
+        "price": 79999,
+        "stock": 15,
+        "imageUrl": "https://images.unsplash.com/photo-1526170375885-4d8ecf77b99f"
+    },
+    {
+        "name": "Sony ZV-E10",
+        "description": "Vlogging camera with interchangeable lens",
+        "brand": "Sony",
+        "category": "Cameras",
+        "price": 69999,
+        "stock": 10,
+        "imageUrl": "https://images.unsplash.com/photo-1604335399105-4e2a22e9ef13"
+    },
+    {
+        "name": "Anker PowerCore 20000mAh",
+        "description": "High-speed USB-C portable power bank",
+        "brand": "Anker",
+        "category": "Accessories",
+        "price": 3999,
+        "stock": 80,
+        "imageUrl": "https://images.unsplash.com/photo-1606813902901-26e3cfb8a9d8"
+    },
+    {
+        "name": "Logitech MX Master 3S",
+        "description": "Ergonomic wireless mouse with fast scrolling",
+        "brand": "Logitech",
+        "category": "Accessories",
+        "price": 9999,
+        "stock": 55,
+        "imageUrl": "https://images.unsplash.com/photo-1593642634315-48f5414c3ad9"
+    },
+    {
+        "name": "Samsung 1TB Portable SSD T7",
+        "description": "USB 3.2 Gen 2, read speeds up to 1050MB/s",
+        "brand": "Samsung",
+        "category": "Storage",
+        "price": 9999,
+        "stock": 48,
+        "imageUrl": "https://images.unsplash.com/photo-1606813902874-26d4e34ec35d"
+    },
+    {
+        "name": "Seagate 2TB External HDD",
+        "description": "USB 3.0 portable hard drive",
+        "brand": "Seagate",
+        "category": "Storage",
+        "price": 5499,
+        "stock": 70,
+        "imageUrl": "https://images.unsplash.com/photo-1606813902938-fd7fdf25396a"
+    },
+    {
+        "name": "Nintendo Switch OLED",
+        "description": "7-inch OLED screen, Joy-Con controllers",
+        "brand": "Nintendo",
+        "category": "Gaming Consoles",
+        "price": 32999,
+        "stock": 15,
+        "imageUrl": "https://images.unsplash.com/photo-1624705002806-50b8f3bce758"
+    },
+    {
+        "name": "PlayStation 5",
+        "description": "Ultra HD 4K gaming console with DualSense controller",
+        "brand": "Sony",
+        "category": "Gaming Consoles",
+        "price": 54999,
+        "stock": 12,
+        "imageUrl": "https://images.unsplash.com/photo-1606813902859-78b4e9e0956c"
+    },
+    {
+        "name": "Xbox Series X",
+        "description": "4K gaming console with 1TB SSD",
+        "brand": "Microsoft",
+        "category": "Gaming Consoles",
+        "price": 52999,
+        "stock": 10,
+        "imageUrl": "https://images.unsplash.com/photo-1624705002897-ffb919c53d69"
+    },
+    {
+        "name": "Apple iPad Air (M2)",
+        "description": "10.9-inch Liquid Retina Display, Wi-Fi + Cellular",
+        "brand": "Apple",
+        "category": "Tablets",
+        "price": 65999,
+        "stock": 20,
+        "imageUrl": "https://images.unsplash.com/photo-1611930022073-b7a4f74fdc2c"
+    },
+    {
+        "name": "Samsung Galaxy Tab S9",
+        "description": "11-inch AMOLED display, Snapdragon 8 Gen 2",
+        "brand": "Samsung",
+        "category": "Tablets",
+        "price": 75999,
+        "stock": 15,
+        "imageUrl": "https://images.unsplash.com/photo-1589985127061-d9b600ca81d2"
+    },
+    {
+        "name": "Lenovo Tab P11 Pro Gen 2",
+        "description": "OLED 2.5K display, MediaTek Kompanio 1300T",
+        "brand": "Lenovo",
+        "category": "Tablets",
+        "price": 34999,
+        "stock": 35,
+        "imageUrl": "https://images.unsplash.com/photo-1624705002884-2b9f6a513b47"
+    }
+]

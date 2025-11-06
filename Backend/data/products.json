@@ -1,0 +1,92 @@
+[
+    {
+        "name": "iPhone 15 Pro Max",
+        "description": "Apple's latest flagship smartphone with A17 Pro chip, 256GB storage, and Titanium design.",
+        "brand": "Apple",
+        "category": "Smartphones",
+        "price": 159999,
+        "stock": 10,
+        "imageUrl": "https://store.storeimages.cdn-apple.com/iphone15promax.jpg"
+    },
+    {
+        "name": "Samsung Galaxy S24 Ultra",
+        "description": "Premium Android smartphone with Snapdragon 8 Gen 3 and 200MP quad camera setup.",
+        "brand": "Samsung",
+        "category": "Smartphones",
+        "price": 139999,
+        "stock": 15,
+        "imageUrl": "https://images.samsung.com/s24ultra.jpg"
+    },
+    {
+        "name": "Sony WH-1000XM5",
+        "description": "Industry-leading noise-cancelling wireless headphones with 30-hour battery life.",
+        "brand": "Sony",
+        "category": "Audio",
+        "price": 29999,
+        "stock": 25,
+        "imageUrl": "https://sony.com/images/wh1000xm5.jpg"
+    },
+    {
+        "name": "MacBook Air M3",
+        "description": "Apple’s ultra-portable laptop powered by the M3 chip, 16GB RAM, 512GB SSD.",
+        "brand": "Apple",
+        "category": "Laptops",
+        "price": 149999,
+        "stock": 8,
+        "imageUrl": "https://store.apple.com/macbookairm3.jpg"
+    },
+    {
+        "name": "Dell XPS 13 Plus",
+        "description": "Premium Windows laptop with Intel i7 13th Gen, OLED display, and sleek design.",
+        "brand": "Dell",
+        "category": "Laptops",
+        "price": 134999,
+        "stock": 12,
+        "imageUrl": "https://dell.com/xps13plus.jpg"
+    },
+    {
+        "name": "JBL Flip 6",
+        "description": "Portable waterproof Bluetooth speaker with powerful bass and 12 hours playtime.",
+        "brand": "JBL",
+        "category": "Audio",
+        "price": 8999,
+        "stock": 30,
+        "imageUrl": "https://jbl.com/flip6.jpg"
+    },
+    {
+        "name": "Apple Watch Series 9",
+        "description": "Smartwatch with S9 chip, blood oxygen sensor, and heart rate monitoring.",
+        "brand": "Apple",
+        "category": "Wearables",
+        "price": 45999,
+        "stock": 20,
+        "imageUrl": "https://apple.com/applewatchseries9.jpg"
+    },
+    {
+        "name": "Asus ROG Strix G16",
+        "description": "Gaming laptop with Intel i9, RTX 4070 GPU, and 16-inch QHD display.",
+        "brand": "Asus",
+        "category": "Laptops",
+        "price": 179999,
+        "stock": 7,
+        "imageUrl": "https://asus.com/rogstrixg16.jpg"
+    },
+    {
+        "name": "Sony PlayStation 5",
+        "description": "Next-gen gaming console with ultra-fast SSD and 4K gaming support.",
+        "brand": "Sony",
+        "category": "Gaming",
+        "price": 59999,
+        "stock": 18,
+        "imageUrl": "https://sony.com/playstation5.jpg"
+    },
+    {
+        "name": "GoPro Hero 12 Black",
+        "description": "Action camera with 5.3K video recording, waterproof design, and Hypersmooth 6.0.",
+        "brand": "GoPro",
+        "category": "Cameras",
+        "price": 49999,
+        "stock": 10,
+        "imageUrl": "https://gopro.com/hero12black.jpg"
+    }
+]

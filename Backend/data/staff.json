@@ -1,0 +1,26 @@
+[
+    {
+        "name": "Alice Johnson",
+        "email": "alice.johnson@smartgadgets.com",
+        "password": "Staff@123",
+        "role": "staff"
+    },
+    {
+        "name": "Brian Lee",
+        "email": "brian.lee@smartgadgets.com",
+        "password": "Staff@123",
+        "role": "staff"
+    },
+    {
+        "name": "Sophie Carter",
+        "email": "sophie.carter@smartgadgets.com",
+        "password": "Staff@123",
+        "role": "staff"
+    },
+    {
+        "name": "Daniel Smith",
+        "email": "daniel.smith@smartgadgets.com",
+        "password": "Admin@123",
+        "role": "admin"
+    }
+]

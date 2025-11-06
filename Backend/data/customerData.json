@@ -1,0 +1,23 @@
+[
+    {
+        "name": "Rahul Mehta",
+        "email": "rahul.mehta@gmail.com",
+        "password": "Customer@123",
+        "phone": "9876543210",
+        "address": "12 MG Road, Pune, Maharashtra"
+    },
+    {
+        "name": "Priya Sharma",
+        "email": "priya.sharma@gmail.com",
+        "password": "Customer@123",
+        "phone": "9823456712",
+        "address": "45 Park Street, Kolkata, West Bengal"
+    },
+    {
+        "name": "Vikram Patel",
+        "email": "vikram.patel@gmail.com",
+        "password": "Customer@123",
+        "phone": "9812345678",
+        "address": "7 Link Road, Ahmedabad, Gujarat"
+    }
+]
