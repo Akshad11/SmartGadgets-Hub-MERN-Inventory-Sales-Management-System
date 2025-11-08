@@ -17,6 +17,7 @@ import {
     CartesianGrid,
     ResponsiveContainer,
 } from "recharts";
+import ExportLogsButton from "../../components/btnExportLogs";
 
 const COLORS = ["#2563eb", "#16a34a", "#dc2626", "#facc15"];
 
@@ -213,6 +214,7 @@ const AdminReports: React.FC = () => {
                     >
                         <FileSpreadsheet size={18} /> Export Excel
                     </button>
+                    <ExportLogsButton />
                 </div>
             </motion.div>
         </AdminLayout>

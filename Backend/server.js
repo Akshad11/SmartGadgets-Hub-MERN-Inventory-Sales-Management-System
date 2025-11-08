@@ -10,6 +10,9 @@ import productRoutes from "./routes/productRoutes.js";
 import orderRoutes from "./routes/orderRoutes.js";
 import statsRoutes from "./routes/statsRoutes.js";
 import userRoutes from "./routes/userRoutes.js";
+import { requestLogger } from "./middleware/loggerMiddleware.js";
+import logsRoutes from "./routes/logsRoutes.js";
+
 
 // Ensure default admin exists
 import Staff from "./models/staffModel.js";
@@ -45,7 +48,7 @@ app.use(cors({
     credentials: true,
 }));
 
-
+app.use(requestLogger);
 app.use("/api/staff", staffRoutes);
 app.use("/api/customers", customerRoutes);
 app.use("/api/auth/staff", staffAuthRoutes);
@@ -54,6 +57,8 @@ app.use("/api/orders", orderRoutes);
 app.use("/api/products", productRoutes);
 app.use("/api/stats", statsRoutes);
 app.use("/api/users", userRoutes);
+app.use("/api/logs", logsRoutes);
+
 
 app.get("/api/health", (req, res) => {
     res.json({ status: "Backend is working fine 🚀" });
