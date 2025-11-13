@@ -33,6 +33,9 @@ import FAQs from "./pages/FAQs";
 import Returns from "./pages/Returns";
 import PrivacyPolicy from "./pages/PrivacyPolicy";
 import About from "./pages/About";
+import StaffProfile from "./pages/Staff/StaffProfile";
+import ChangePassword from "./pages/Shared/ChangePassword";
+import CusResetPassword from "./pages/CusResetPassword";
 
 function App() {
   return (
@@ -88,6 +91,14 @@ function App() {
                 </CustomerProtectedRoute>
               }
             />
+            <Route
+              path="/cuspassword-reset"
+              element={
+                <CustomerProtectedRoute>
+                  <CusResetPassword />
+                </CustomerProtectedRoute>
+              }
+            />
 
 
             <Route
@@ -106,7 +117,14 @@ function App() {
                 </ProtectedRoute>
               }
             />
-
+            <Route
+              path="/staff-profile"
+              element={
+                <ProtectedRoute allowedRoles={["staff"]}>
+                  <StaffProfile />
+                </ProtectedRoute>
+              }
+            />
 
             <Route
               path="/admin/dashboard"
@@ -129,6 +147,14 @@ function App() {
               element={
                 <ProtectedRoute allowedRoles={["admin"]}>
                   <AdminStaffCustomers />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/admin-profile"
+              element={
+                <ProtectedRoute allowedRoles={["admin"]}>
+                  <StaffProfile />
                 </ProtectedRoute>
               }
             />
@@ -164,7 +190,7 @@ function App() {
             <Route
               path="/edit-user/:type/:id"
               element={
-                <ProtectedRoute allowedRoles={["admin"]}>
+                <ProtectedRoute allowedRoles={["admin", "staff"]}>
                   <EditUser />
                 </ProtectedRoute>
               }
@@ -177,19 +203,20 @@ function App() {
                 </ProtectedRoute>
               }
             />
-            <Route
-              path="/add-staff"
-              element={
-                <ProtectedRoute allowedRoles={["admin"]}>
-                  <AddStaff />
-                </ProtectedRoute>
-              }
-            />
+
             <Route
               path="/add-product-json"
               element={
                 <ProtectedRoute allowedRoles={["admin"]}>
                   <AddProductsJson />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/change-password"
+              element={
+                <ProtectedRoute allowedRoles={["admin", "staff"]}>
+                  <ChangePassword />
                 </ProtectedRoute>
               }
             />

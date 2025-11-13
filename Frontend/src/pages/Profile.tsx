@@ -1,7 +1,7 @@
 // src/pages/Profile.tsx
 import React, { useEffect, useState } from "react";
 import { AnimatePresence, motion } from "framer-motion";
-import { User, Package, ArrowLeft, ChevronDown, Truck, CreditCard } from "lucide-react";
+import { User, Package, ArrowLeft, ChevronDown, Truck, CreditCard, Key } from "lucide-react";
 import CustomerLayout from "../layout/CustomerLayout";
 import { useNavigate } from "react-router-dom";
 import api from "../api/axiosInstance";
@@ -69,6 +69,8 @@ export default Profile;
 const EditUserDetails = ({ user }: { user: ICustomer | null }) => {
 
     const [formData, setFormData] = useState<any>(null);
+    const navigate = useNavigate();
+
 
     useEffect(() => {
         if (user) {
@@ -86,7 +88,9 @@ const EditUserDetails = ({ user }: { user: ICustomer | null }) => {
     const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
         setFormData({ ...formData, [e.target.name]: e.target.value });
     };
-
+    const handlePasswordUser = () => {
+        navigate(`/cuspassword-reset`);
+    };
     const handleSave = async () => {
         try {
             await api.put("/customers/" + user?._id, formData);
@@ -146,14 +150,28 @@ const EditUserDetails = ({ user }: { user: ICustomer | null }) => {
                         className="w-full p-3 border rounded-lg focus:ring-2 focus:ring-blue-400"
                     />
                 </div>
+                <div className="flex items-center gap-4 mt-4">
+                    <motion.button
+                        whileHover={{ scale: 1.03 }}
+                        whileTap={{ scale: 0.95 }}
+                        onClick={handleSave}
+                        className="px-6 py-3 rounded-xl bg-blue-600 hover:bg-blue-700 
+        text-white shadow-md flex items-center gap-2 font-medium transition"
+                    >
+                        💾 Save
+                    </motion.button>
 
-                <motion.button
-                    whileTap={{ scale: 0.95 }}
-                    onClick={handleSave}
-                    className="bg-blue-600 hover:bg-blue-700 text-white px-6 py-3 rounded-xl shadow-md"
-                >
-                    Save Changes
-                </motion.button>
+                    <motion.button
+                        whileHover={{ scale: 1.05 }}
+                        whileTap={{ scale: 0.95 }}
+                        onClick={handlePasswordUser}
+                        className="px-6 py-3 rounded-xl bg-orange-600 hover:bg-orange-700 
+        text-white shadow-md flex items-center gap-2 font-medium transition"
+                    >
+                        <Key size={18} />
+                        Change Password
+                    </motion.button>
+                </div>
             </div>
         </motion.div>
     );

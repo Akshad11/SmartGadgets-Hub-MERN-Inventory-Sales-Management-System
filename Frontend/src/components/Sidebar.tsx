@@ -1,7 +1,7 @@
 // src/components/Sidebar.tsx
 import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-import { LayoutDashboard, Package, Users, LogOut, BarChart3 } from "lucide-react";
+import { LayoutDashboard, Package, Users, LogOut, BarChart3, User } from "lucide-react";
 import { motion } from "framer-motion";
 import { useAuth } from "../hooks/useAuth";
 
@@ -14,6 +14,7 @@ const Sidebar: React.FC = () => {
         { name: "Products", path: "/admin/products", icon: <Package size={20} /> },
         { name: "Staff / Customers", path: "/admin/staff-customers", icon: <Users size={20} /> },
         { name: "Reports", path: "/admin/reports", icon: <BarChart3 size={20} /> },
+        { name: "Profile", path: "/admin-profile", icon: <User size={20} /> },
     ];
 
     return (

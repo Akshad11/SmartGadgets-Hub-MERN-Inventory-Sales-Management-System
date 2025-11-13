@@ -1,16 +1,15 @@
 import React, { useState } from "react";
 import { useParams, useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
-import api from "../../api/axiosInstance";
+import api from "../api/axiosInstance";
 
-const AdminResetPassword: React.FC = () => {
+const CusResetPassword: React.FC = () => {
     const { id } = useParams<{ id: string }>();
     const navigate = useNavigate();
 
-    const [adminPassword, setAdminPassword] = useState("");
+    const [currentPassword, setCurrentPassword] = useState("");
     const [newPassword, setNewPassword] = useState("");
     const [confirmPassword, setConfirmPassword] = useState("");
-
     const [loading, setLoading] = useState(false);
     const [error, setError] = useState("");
     const [success, setSuccess] = useState("");
@@ -20,7 +19,7 @@ const AdminResetPassword: React.FC = () => {
         setError("");
         setSuccess("");
 
-        if (!adminPassword || !newPassword || !confirmPassword) {
+        if (!currentPassword || !newPassword || !confirmPassword) {
             setError("Please fill in all fields.");
             return;
         }
@@ -38,13 +37,13 @@ const AdminResetPassword: React.FC = () => {
         try {
             setLoading(true);
 
-            await api.put(`/users/admin/reset-password/${id}`, {
-                adminPassword,
+            await api.put(`/users/reset-password/${id}`, {
+                currentPassword,
                 newPassword,
             });
 
-            setSuccess("✅ Password updated successfully!");
-            setTimeout(() => navigate("/admin/staff-customers"), 1500);
+            setSuccess("✅ Password reset successfully!");
+            setTimeout(() => navigate("/profile"), 1500);
         } catch (err: any) {
             setError(err.response?.data?.message || "Failed to reset password.");
         } finally {
@@ -61,7 +60,7 @@ const AdminResetPassword: React.FC = () => {
                 className="bg-white shadow-lg rounded-2xl p-8 w-full max-w-md"
             >
                 <h2 className="text-2xl font-semibold text-center mb-6 text-gray-800">
-                    Admin Password Reset
+                    Reset Your Password
                 </h2>
 
                 {error && <p className="text-red-500 text-center mb-3">{error}</p>}
@@ -72,17 +71,17 @@ const AdminResetPassword: React.FC = () => {
                 )}
 
                 <form onSubmit={handleSubmit} className="space-y-4">
-                    {/* Admin Password */}
+                    {/* Current Password */}
                     <div>
                         <label className="block text-sm text-gray-600 mb-1">
-                            Your Admin Password
+                            Current Password
                         </label>
                         <input
                             type="password"
-                            value={adminPassword}
-                            onChange={(e) => setAdminPassword(e.target.value)}
+                            value={currentPassword}
+                            onChange={(e) => setCurrentPassword(e.target.value)}
                             className="w-full p-3 border rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none"
-                            placeholder="Enter your admin password"
+                            placeholder="Enter your current password"
                             required
                         />
                     </div>
@@ -90,14 +89,14 @@ const AdminResetPassword: React.FC = () => {
                     {/* New Password */}
                     <div>
                         <label className="block text-sm text-gray-600 mb-1">
-                            New Password for User
+                            New Password
                         </label>
                         <input
                             type="password"
                             value={newPassword}
                             onChange={(e) => setNewPassword(e.target.value)}
                             className="w-full p-3 border rounded-md focus:ring-2 focus:ring-blue-500 focus:outline-none"
-                            placeholder="Enter new password"
+                            placeholder="Enter your new password"
                             required
                             minLength={6}
                         />
@@ -127,7 +126,7 @@ const AdminResetPassword: React.FC = () => {
                         disabled={loading}
                         className="w-full bg-blue-600 hover:bg-blue-700 text-white py-3 rounded-md font-medium shadow-md transition-all duration-200"
                     >
-                        {loading ? "Updating..." : "Reset Password"}
+                        {loading ? "Resetting..." : "Reset Password"}
                     </motion.button>
                 </form>
             </motion.div>
@@ -135,4 +134,4 @@ const AdminResetPassword: React.FC = () => {
     );
 };
 
-export default AdminResetPassword;
+export default CusResetPassword;

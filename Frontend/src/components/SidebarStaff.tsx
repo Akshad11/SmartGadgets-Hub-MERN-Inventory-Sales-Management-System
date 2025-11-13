@@ -1,7 +1,7 @@
 // src/components/SidebarStaff.tsx
 import React from "react";
 import { NavLink, useNavigate } from "react-router-dom";
-import { LayoutDashboard, Package, Truck, LogOut } from "lucide-react";
+import { LayoutDashboard, Package, Truck, LogOut, User } from "lucide-react";
 import { motion } from "framer-motion";
 import { useAuth } from "../hooks/useAuth";
 
@@ -13,6 +13,7 @@ const SidebarStaff: React.FC = () => {
         { name: "Dashboard", path: "/staff/dashboard", icon: <LayoutDashboard size={20} /> },
         { name: "Products", path: "/staff/products", icon: <Package size={20} /> },
         { name: "Manage Orders", path: "/manage-orders", icon: <Truck size={20} /> },
+        { name: "Profile", path: "/staff-profile", icon: <User size={20} /> },
     ];
 
     return (
