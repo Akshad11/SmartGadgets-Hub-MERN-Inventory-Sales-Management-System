@@ -13,7 +13,6 @@ import EditProduct from "./pages/Shared/EditProduct";
 import AddStock from "./pages/Shared/AddStock";
 import EditUser from "./pages/Shared/EditUser";
 import EditCustomer from "./pages/Admin/EditCustomer";
-import AddStaff from "./pages/Admin/AddStaff";
 import Home from "./pages/Home";
 import Products from "./pages/Products";
 import ProductDetails from "./pages/ProductDetails";
