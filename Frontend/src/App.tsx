@@ -35,6 +35,7 @@ import About from "./pages/About";
 import StaffProfile from "./pages/Staff/StaffProfile";
 import ChangePassword from "./pages/Shared/ChangePassword";
 import CusResetPassword from "./pages/CusResetPassword";
+import EditAdmin from "./pages/Admin/EditAdmin";
 
 function App() {
   return (
@@ -154,6 +155,14 @@ function App() {
               element={
                 <ProtectedRoute allowedRoles={["admin"]}>
                   <StaffProfile />
+                </ProtectedRoute>
+              }
+            />
+            <Route
+              path="/admin-editprofile"
+              element={
+                <ProtectedRoute allowedRoles={["admin"]}>
+                  <EditAdmin />
                 </ProtectedRoute>
               }
             />

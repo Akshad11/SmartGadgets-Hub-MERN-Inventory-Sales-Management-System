@@ -59,7 +59,12 @@ const StaffProfile: React.FC = () => {
     }
 
     const handleEditUser = () => {
-        navigate(`/edit-user/staff/${user?.id}`);
+        if (user?.role === "admin") {
+            navigate(`/admin-editprofile`);
+
+        } else {
+            navigate(`/edit-user/staff/${user?.id}`);
+        }
     };
 
     const handlePasswordUser = () => {
